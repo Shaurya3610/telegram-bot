@@ -2,7 +2,7 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-BOT_TOKEN = os.getenv("8242054150:AAGABV7UnUYRlo172XRI5dJJI9dJJBuQKRs")
+BOT_TOKEN=os.getenv("8242054150:AAGABV7UnUYRlo172XRI5dJJI9dJJBuQKRs")
 
 async def handle_poll(update: Update, context: ContextTypes.DEFAULT_TYPE):
     poll = update.message.poll
